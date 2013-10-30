@@ -1,0 +1,18 @@
+.selectText {
+    font-size: 16px;
+}
+.logoWord {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: inherit;
+}
+.lederTabel thead tr {
+    background-color: #aa99FF;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.footer {
+    background-color: #EEEEEE;
+    height: 20px;
+}
