@@ -1,12 +1,13 @@
 package models
 
-import com.novus.salat.annotations.raw.Key
-import com.novus.salat.dao.{SalatDAO, DAO, ModelCompanion}
-import com.mongodb.casbah.MongoConnection
 import parameters.MongoConfig._
-import org.bson.types.ObjectId
 import java.util.Date
+import com.novus.salat.dao._
 import com.mongodb.casbah.commons.Imports._
+import com.mongodb.casbah.MongoConnection
+import mongoContext._
+
+import com.novus.salat.annotations.raw.Key
 
 /**
  * User: Dimitr

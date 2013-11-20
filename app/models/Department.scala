@@ -1,9 +1,10 @@
 package models
 
-import com.novus.salat.annotations.raw.Key
-import com.mongodb.casbah.MongoConnection
-import com.novus.salat.dao._
 import parameters.MongoConfig._
+import com.novus.salat.dao._
+import com.mongodb.casbah.MongoConnection
+import mongoContext._
+import com.novus.salat.annotations.raw.Key
 
 /**
  * User: Dimitr
