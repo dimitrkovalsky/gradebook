@@ -15,17 +15,16 @@ import com.novus.salat.annotations.raw.Key
  * Time: 10:14
  */
 // (Id, Id_ступінь, Id_звання, ПІБ, Id_посади, Id_кафедри, дат_поч_пед_стажу, тел_внутр, ауд_викл);
-case class Teacher(@Key("_id") id: ObjectId, degree: String, rank: String, position: String, fio: String, departmentId: ObjectId, startTeach: Date,
-                   phone: String, classroom: Int, url: String) {
+case class Lecturer(@Key("_id") id: ObjectId, degree: String, rank: String, position: String, fio: String, departmentId: ObjectId, startTeach: Date,
+                   phone: String, classroom: Int, url: String) {}
 
-}
-
-object Teacher extends ModelCompanion[Teacher, Int] {
+object Lecturer extends ModelCompanion[Lecturer, Int] {
   val collection = MongoConnection(MONGO_HOST, MONGO_PORT)(MONGO_DB)("teachers")
 
-  def dao: DAO[Teacher, Int] = new SalatDAO[Teacher, Int](collection = collection) {}
+  def dao: DAO[Lecturer, Int] = new SalatDAO[Lecturer, Int](collection = collection) {}
 
-  def findByUrl(url: String): Option[Teacher] = {
+  def findByUrl(url: String): Option[Lecturer] = {
+
     dao.findOne(MongoDBObject("url" -> url))
   }
 }

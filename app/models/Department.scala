@@ -5,13 +5,15 @@ import com.novus.salat.dao._
 import com.mongodb.casbah.MongoConnection
 import mongoContext._
 import com.novus.salat.annotations.raw.Key
+import org.bson.types.ObjectId
 
 /**
  * User: Dimitr
  * Date: 18.11.13
  * Time: 10:15
  */
-case class Department(@Key("_id") id: Int, title: String) {
+case class Department(@Key("_id") id: Int, title: String, institute: Int, head: ObjectId, innerPhone: String,
+                      methodologistPhone: String, labAssistPhone: String, headAuditory: Int) {
 
 }
 
