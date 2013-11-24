@@ -2,6 +2,7 @@ package models
 
 import com.novus.salat.annotations.raw.Key
 import com.mongodb.casbah.commons.Imports._
+import java.util.Date
 
 /**
  * User: Dimitr

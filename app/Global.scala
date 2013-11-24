@@ -1,9 +1,6 @@
 import com.jungleo.preloaders.PreloadRunner
-import controllers.ReaderController
 import java.util.logging.Logger
 import play.api._
-import utils.MailUtil
-import play.api.Play.current
 /**
  * User: dkovalskyi
  * Date: 18.09.13

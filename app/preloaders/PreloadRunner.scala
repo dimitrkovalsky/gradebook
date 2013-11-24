@@ -9,7 +9,7 @@ object PreloadRunner {
     def load(active: Boolean = false) {
         if (!active)
             return
-        val preloaders: List[Preloader] = new RegionPreloader :: new SectorPreloader :: Nil
-        preloaders.foreach(p => println(p.preload()))
+//        val preloaders: List[Preloader] = new RegionPreloader :: new SectorPreloader :: Nil
+//        preloaders.foreach(p => println(p.preload()))
     }
 }
