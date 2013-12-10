@@ -8,6 +8,6 @@ import com.mongodb.casbah.commons.Imports._
  * Date: 18.11.13
  * Time: 10:30
  */
-case class Group(@Key("_id") id: ObjectId, name: String, idStudent: ObjectId, idLecture: ObjectId) {}
+case class Group(@Key("_id") id: ObjectId, name: String, department:String) {}
 
 object Group{}
