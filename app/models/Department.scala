@@ -12,10 +12,8 @@ import org.bson.types.ObjectId
  * Date: 18.11.13
  * Time: 10:15
  */
-case class Department(@Key("_id") id: Int, title: String, institute: Int, head: ObjectId, innerPhone: String,
-                      methodologistPhone: String, labAssistPhone: String, headAuditory: Int) {
-
-}
+case class Department(@Key("_id") id: Int, title: String, institute: String, head: ObjectId, innerPhone: String,
+                      methodologistPhone: String, labAssistPhone: String, headAuditory: Int) {}
 
 object Department extends ModelCompanion[Department, Int] {
   val collection = MongoConnection(MONGO_HOST, MONGO_PORT)(MONGO_DB)("departments")

@@ -1,4 +1,4 @@
-package com.jungleo.preloaders
+package preloaders
 
 /**
  * User: dkovalskyi
