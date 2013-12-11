@@ -13,7 +13,7 @@ class DepartmentPreloader extends Preloader {
   def preload(): String = {
     val departments = List(Department("Компьютерні системі управління", institutes(1), new ObjectId(), "+380432123456", "+380432654321", "+380432123123", 1))
     departments.foreach(Department.save)
-    s"[DepartmentPreloader] loaded   $${departments.size} departments"
+    s"[DepartmentPreloader] loaded    $${departments.size} departments"
   }
 
 }
