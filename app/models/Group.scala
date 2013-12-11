@@ -9,7 +9,11 @@ import com.mongodb.casbah.commons.Imports._
  * Time: 10:30
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 case class Group(@Key("_id") id: ObjectId, name: String, department:String) {}
+=======
+case class Group(@Key("_id") id: ObjectId, name: String, @Ignore students: List[Student]) {}
+>>>>>>> 61189d5668d99348156cb05db9b14a8c9b9b8ae6
 =======
 case class Group(@Key("_id") id: ObjectId, name: String, @Ignore students: List[Student]) {}
 >>>>>>> 61189d5668d99348156cb05db9b14a8c9b9b8ae6
