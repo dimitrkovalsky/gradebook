@@ -1,6 +1,6 @@
 package preloaders
 
-import models.{Lecturer, Department}
+import models.{Department}
 import models.Predefined._
 import org.bson.types.ObjectId
 
